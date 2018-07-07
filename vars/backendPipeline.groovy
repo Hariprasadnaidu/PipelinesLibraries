@@ -1,4 +1,6 @@
- pipeline {
+ def call()
+{
+pipeline {
     agent any
     stages {
         stage('Example') {
@@ -12,4 +14,5 @@
             echo 'I will always say Hello again!'
         }
     }
+}
 }
