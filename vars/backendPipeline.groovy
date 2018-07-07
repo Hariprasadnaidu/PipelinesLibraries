@@ -1,10 +1,13 @@
 def call()
 {
-node {
+pipeline{
+agent{
+ stages
+{
 stage ('test') {
                    sh "echo 'this is sample library'" 
                 }
-
-  
+  }
+}
 }
 }
