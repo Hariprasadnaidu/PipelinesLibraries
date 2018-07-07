@@ -1,7 +1,7 @@
 def call()
 {
 pipeline{
-agent{
+ agent{"master"}
  stages
 {
 stage ('test') {
@@ -10,4 +10,4 @@ stage ('test') {
   }
 }
 }
-}
+
