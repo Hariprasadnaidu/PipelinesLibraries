@@ -6,10 +6,9 @@ def steps
 
 public AddUtil(steps)  {this.steps=steps}
 
-public void sum(script, int a, int b)
+public void sum(script, String str)
 {
- static String c = "Hari"
-steps.echo "This is c value : ${script.env.c}"
+steps.echo "This is : ${script.env.str}"
 
 }
 }
