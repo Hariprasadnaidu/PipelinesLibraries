@@ -9,7 +9,7 @@ public AddUtil(steps)  {this.steps=steps}
 public void sum(script, int a, int b)
 {
  def c= a + b
-steps.echo "${script.env.a}"
+steps.echo "This ia A value : ${script.env.a}"
 steps.echo "${script.env.c}"
 }
 }
