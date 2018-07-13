@@ -8,7 +8,7 @@ public AddUtil(steps)  {this.steps=steps}
 
 public void sum(script, int a)
 {
- static string c = "Hari"
+ static String c = "Hari"
 steps.echo "This is c value : ${script.env.c}"
 
 }
