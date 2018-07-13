@@ -7,8 +7,8 @@ pipeline {
         stage('Example') {
             steps {
                  script {
-                  addutil.sum(this,"Hari")
-                steps.echo "${env.c}"
+                  addutil.sum(this, "Hari")
+                steps.echo "${script.env.str}"
 }
             }
         }
