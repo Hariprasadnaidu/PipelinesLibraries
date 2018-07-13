@@ -9,9 +9,9 @@ pipeline {
                  script {
                   addutil.Display(this, "Hari")
                 steps.echo " This is ${env.Name}"
-                steps.echo "This is ${env.BranchName}"
-                steps.echo "This is ${env.JobName}"
-                steps.echo "This is ${env.ChangeTitle}"
+                steps.echo "This is ${env.BRANCH_NAME}"
+                steps.echo "This is ${env.JOB_NAME}"
+                steps.echo "This is ${env.CHANGE_TITLE}"
                  addutil.sum(this, 2, 3)
                  steps.echo "This is SUM Value : ${env.c}"
 }
