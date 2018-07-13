@@ -8,7 +8,7 @@ pipeline {
             steps {
                  script {
                   addutil.sum(this, 2, 3)
-                steps.echo "${env.c}"
+                steps.echo "${script.env.c}"
 }
             }
         }
