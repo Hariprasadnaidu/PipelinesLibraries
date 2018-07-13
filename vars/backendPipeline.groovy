@@ -8,7 +8,7 @@ pipeline {
             steps {
                  script {
                   addutil.sum(this, "Hari")
-                steps.echo "${env.str}"
+                steps.echo "${env.Name}"
 }
             }
         }
