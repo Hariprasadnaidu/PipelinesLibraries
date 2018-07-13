@@ -8,10 +8,10 @@ pipeline {
             steps {
                  script {
                   addutil.sum(this, "Hari")
-                steps.echo " ${env.Name}"
-                steps.echo "This is ${env.BranchName}"
-                steps.echo "This is ${env.JobName}"
-                steps.echo "This is ${env.ChangeTitle}"
+                steps.echo "This is ${env.Name}"
+                steps.echo "This is ${env.BRANCH_NAME}"
+                steps.echo "This is ${env.JOB_NAME}"
+                steps.echo "This is ${env.CHANGE_TITLE}"
 }
             }
         }
