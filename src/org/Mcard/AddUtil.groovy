@@ -8,6 +8,6 @@ public AddUtil(steps)  {this.steps=steps}
 
 public void sum(script, int a, int b)
 {
- def c= a+b
+ def c= a + b
 }
 }
