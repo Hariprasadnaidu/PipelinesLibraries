@@ -1,11 +1,15 @@
  def call()
 {
+def addutil = new  org.Mcard.AddUtil(this)
 pipeline {
     agent any
     stages {
         stage('Example') {
             steps {
-                echo 'Hello World'
+                 script {
+                  addutil.sum(this, 2, 3)
+                steps.echo "${script.env.c}"
+}
             }
         }
     }
