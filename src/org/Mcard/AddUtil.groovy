@@ -8,8 +8,8 @@ public AddUtil(steps)  {this.steps=steps}
 
 public void sum(script, int a, int b)
 {
- def c = a + b
-steps.echo "This is c value : ${script.env.c}".toInteger()
+ def c = "Hari"
+steps.echo "This is c value : ${script.env.c}"
 
 }
 }
