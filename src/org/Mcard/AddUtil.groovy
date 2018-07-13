@@ -6,13 +6,17 @@ def steps
 
 public AddUtil(steps)  {this.steps=steps}
 
-public void sum(script, String str)
+public void Display(script, String str)
 {
 
 steps.env.Name = str
-steps.echo "This is : ${steps.env.Name}"
 
 
+}
+
+public void sum(script, int a, int b)
+{
+ script.env.c = a + b
 
 
 }
