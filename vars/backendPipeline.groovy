@@ -1,19 +1,27 @@
- def call()
+def call()
 {
-def addutil = new org.Mcard.AddUtil(this)
+def buildUtil = new org.Mcard.BuildUtil(this)
 pipeline {
     agent any
     stages {
-        stage('Example') {
+
+        stage('Checkout') {
             steps {
                  script {
-                  addutil.Display(this, "Hari")
-                steps.echo " This is ${env.Name}"
-                steps.echo "This is ${env.BRANCH_NAME}"
-                steps.echo "This is ${env.JOB_NAME}"
-                steps.echo "This is ${env.CHANGE_TITLE}"
-                 addutil.sum(this, 2, 3)
-                 steps.echo "This is SUM Value : ${env.c}"
+            checkout scm
+            script.env.currentGitbranch=env.BRANCH_NAME
+            steps.echo "This is ${env.currentGitbranch} branch"                 
+                
+}
+            }
+        }
+        stage('Build the Repository') {
+            steps {
+                 script {
+                
+                        buildUtil.buildProject(this)
+                  
+                
 }
             }
         }
